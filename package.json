@@ -1,0 +1,17 @@
+{
+  "name": "chatify",
+  "version": "1.0.0",
+  "main": "index.js",
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "scripts": {
+    "dev": "concurrently \"npm --prefix ./backend run dev\" \"npm --prefix ./frontend run dev\"",
+    "build": "npm --prefix ./chatify/backend install && npm --prefix ./chatify/frontend install && npm --prefix ./chatify/frontend run build",
+    "start": "npm run start --prefix ./chatify/backend"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "" 
+}
